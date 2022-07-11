@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7e76d7403567940f195457357bd95d4d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_7e76d7403567940f195457357bd95d4d" ></div>
+        
+</body>
+<script>    
+    
+            var map_7e76d7403567940f195457357bd95d4d = L.map(
+                "map_7e76d7403567940f195457357bd95d4d",
+                {
+                    center: [39.83, -98.58],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f8be07c93c009b4b6ab1ec02c8683542 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var marker_74f2a51e115f6eada778c7b9814e86e5 = L.marker(
+                [29.8323, -95.736],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_9abe12826121897ed1e73e9dc7f01bb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_74f2a51e115f6eada778c7b9814e86e5.setIcon(icon_9abe12826121897ed1e73e9dc7f01bb1);
+        
+    
+        var popup_a8b0d2a5dba0cd9f37aff4485f9d0e73 = L.popup({"maxWidth": 300});
+
+        
+            var html_bf3c79ced0ca96f48d3ec456057d0973 = $(`<div id="html_bf3c79ced0ca96f48d3ec456057d0973" style="width: 100.0%; height: 100.0%;">Average Housing Price: $217010<br><br> Annual Income: $42184<br><br> Projected ROI: 19%</div>`)[0];
+            popup_a8b0d2a5dba0cd9f37aff4485f9d0e73.setContent(html_bf3c79ced0ca96f48d3ec456057d0973);
+        
+
+        marker_74f2a51e115f6eada778c7b9814e86e5.bindPopup(popup_a8b0d2a5dba0cd9f37aff4485f9d0e73)
+        ;
+
+        
+    
+    
+            var marker_b14662e0e488b823376ce527517202ff = L.marker(
+                [40.7453, -73.8611],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_dee3d657b03add0c6f1ab82634ff5eaf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b14662e0e488b823376ce527517202ff.setIcon(icon_dee3d657b03add0c6f1ab82634ff5eaf);
+        
+    
+        var popup_6431329a9aff61228076c63a1d5e1d21 = L.popup({"maxWidth": 300});
+
+        
+            var html_e12953f7ca81ba30ca4cb82ad965b123 = $(`<div id="html_e12953f7ca81ba30ca4cb82ad965b123" style="width: 100.0%; height: 100.0%;">Average Housing Price: $429735<br><br> Annual Income: $31344<br><br> Projected ROI: 7%</div>`)[0];
+            popup_6431329a9aff61228076c63a1d5e1d21.setContent(html_e12953f7ca81ba30ca4cb82ad965b123);
+        
+
+        marker_b14662e0e488b823376ce527517202ff.bindPopup(popup_6431329a9aff61228076c63a1d5e1d21)
+        ;
+
+        
+    
+    
+            var marker_de115023d97a9d6755cac897d3d2f83a = L.marker(
+                [41.7781, -87.7069],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_ce7fc30e6c617e09d22619ab2d639a9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_de115023d97a9d6755cac897d3d2f83a.setIcon(icon_ce7fc30e6c617e09d22619ab2d639a9b);
+        
+    
+        var popup_6cb7ee6147343fa87c201b907a66cee3 = L.popup({"maxWidth": 300});
+
+        
+            var html_b0f36fdb93820f85e4c275924b4b9759 = $(`<div id="html_b0f36fdb93820f85e4c275924b4b9759" style="width: 100.0%; height: 100.0%;">Average Housing Price: $223935<br><br> Annual Income: $40478<br><br> Projected ROI: 18%</div>`)[0];
+            popup_6cb7ee6147343fa87c201b907a66cee3.setContent(html_b0f36fdb93820f85e4c275924b4b9759);
+        
+
+        marker_de115023d97a9d6755cac897d3d2f83a.bindPopup(popup_6cb7ee6147343fa87c201b907a66cee3)
+        ;
+
+        
+    
+    
+            var marker_9ec0584440780d80abf2694c1e787712 = L.marker(
+                [31.7677, -106.3016],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_f59239825dbc6a5413ece74c5710d9ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9ec0584440780d80abf2694c1e787712.setIcon(icon_f59239825dbc6a5413ece74c5710d9ff);
+        
+    
+        var popup_2f5d48c91effb239d68caa971ac46b98 = L.popup({"maxWidth": 300});
+
+        
+            var html_5283f61f7126a640d447bb85db59da37 = $(`<div id="html_5283f61f7126a640d447bb85db59da37" style="width: 100.0%; height: 100.0%;">Average Housing Price: $216440<br><br> Annual Income: $33087<br><br> Projected ROI: 15%</div>`)[0];
+            popup_2f5d48c91effb239d68caa971ac46b98.setContent(html_5283f61f7126a640d447bb85db59da37);
+        
+
+        marker_9ec0584440780d80abf2694c1e787712.bindPopup(popup_2f5d48c91effb239d68caa971ac46b98)
+        ;
+
+        
+    
+    
+            var marker_a9bab2c92d493ee9bdf5705fdd171ee5 = L.marker(
+                [34.0079, -118.2582],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_dbcc0c4841a213536b27835b1dba74f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a9bab2c92d493ee9bdf5705fdd171ee5.setIcon(icon_dbcc0c4841a213536b27835b1dba74f6);
+        
+    
+        var popup_d6ec1286fef5a1a07fa8c7eec0214245 = L.popup({"maxWidth": 300});
+
+        
+            var html_b4f0b3eef973a7b22a0aaaf90fc4f496 = $(`<div id="html_b4f0b3eef973a7b22a0aaaf90fc4f496" style="width: 100.0%; height: 100.0%;">Average Housing Price: $547565<br><br> Annual Income: $48180<br><br> Projected ROI: 9%</div>`)[0];
+            popup_d6ec1286fef5a1a07fa8c7eec0214245.setContent(html_b4f0b3eef973a7b22a0aaaf90fc4f496);
+        
+
+        marker_a9bab2c92d493ee9bdf5705fdd171ee5.bindPopup(popup_d6ec1286fef5a1a07fa8c7eec0214245)
+        ;
+
+        
+    
+    
+            var marker_bd66943a27c0b26ecea6dfc0c0bc7d1a = L.marker(
+                [40.7036, -73.8961],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_a3adbcb9ad3c5c54c2307b8a41a2e250 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bd66943a27c0b26ecea6dfc0c0bc7d1a.setIcon(icon_a3adbcb9ad3c5c54c2307b8a41a2e250);
+        
+    
+        var popup_f6026ee2073197b79d8ac66a33107927 = L.popup({"maxWidth": 300});
+
+        
+            var html_596ceefcb6e356d6c303b957ebf36d44 = $(`<div id="html_596ceefcb6e356d6c303b957ebf36d44" style="width: 100.0%; height: 100.0%;">Average Housing Price: $999805<br><br> Annual Income: $19564<br><br> Projected ROI: 2%</div>`)[0];
+            popup_f6026ee2073197b79d8ac66a33107927.setContent(html_596ceefcb6e356d6c303b957ebf36d44);
+        
+
+        marker_bd66943a27c0b26ecea6dfc0c0bc7d1a.bindPopup(popup_f6026ee2073197b79d8ac66a33107927)
+        ;
+
+        
+    
+    
+            var marker_74ae9139d36eff78bdf23d676a806533 = L.marker(
+                [33.9056, -118.0818],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_4cafc4e4acd3e4b04c51d2393b64d166 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_74ae9139d36eff78bdf23d676a806533.setIcon(icon_4cafc4e4acd3e4b04c51d2393b64d166);
+        
+    
+        var popup_83b37342167e4a043c5e7a2812d93a52 = L.popup({"maxWidth": 300});
+
+        
+            var html_f21dd1e3f5d9072a58fcde11847df17d = $(`<div id="html_f21dd1e3f5d9072a58fcde11847df17d" style="width: 100.0%; height: 100.0%;">Average Housing Price: $593310<br><br> Annual Income: $28537<br><br> Projected ROI: 5%</div>`)[0];
+            popup_83b37342167e4a043c5e7a2812d93a52.setContent(html_f21dd1e3f5d9072a58fcde11847df17d);
+        
+
+        marker_74ae9139d36eff78bdf23d676a806533.bindPopup(popup_83b37342167e4a043c5e7a2812d93a52)
+        ;
+
+        
+    
+    
+            var marker_4958c2ebf3c92f62f9dc44d7b05a9f2b = L.marker(
+                [29.7404, -95.8304],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_2398e5b780334429970935c8dd97065f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4958c2ebf3c92f62f9dc44d7b05a9f2b.setIcon(icon_2398e5b780334429970935c8dd97065f);
+        
+    
+        var popup_4e35abc13c2316d9b27c47ccf920a470 = L.popup({"maxWidth": 300});
+
+        
+            var html_2fedf7f76ba2e23096f4aba3e3e27a2f = $(`<div id="html_2fedf7f76ba2e23096f4aba3e3e27a2f" style="width: 100.0%; height: 100.0%;">Average Housing Price: $196850<br><br> Annual Income: $26909<br><br> Projected ROI: 14%</div>`)[0];
+            popup_4e35abc13c2316d9b27c47ccf920a470.setContent(html_2fedf7f76ba2e23096f4aba3e3e27a2f);
+        
+
+        marker_4958c2ebf3c92f62f9dc44d7b05a9f2b.bindPopup(popup_4e35abc13c2316d9b27c47ccf920a470)
+        ;
+
+        
+    
+    
+            var marker_88e864999898f338cac50f3355f0030c = L.marker(
+                [34.2556, -118.4208],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_971cfc8d58202e33db1fb09e896948d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_88e864999898f338cac50f3355f0030c.setIcon(icon_971cfc8d58202e33db1fb09e896948d7);
+        
+    
+        var popup_1c88da7ba3d27ee5133fcc2e77a26c91 = L.popup({"maxWidth": 300});
+
+        
+            var html_e113677e58dd30263ce045c221dfa848 = $(`<div id="html_e113677e58dd30263ce045c221dfa848" style="width: 100.0%; height: 100.0%;">Average Housing Price: $528030<br><br> Annual Income: $27092<br><br> Projected ROI: 5%</div>`)[0];
+            popup_1c88da7ba3d27ee5133fcc2e77a26c91.setContent(html_e113677e58dd30263ce045c221dfa848);
+        
+
+        marker_88e864999898f338cac50f3355f0030c.bindPopup(popup_1c88da7ba3d27ee5133fcc2e77a26c91)
+        ;
+
+        
+    
+    
+            var marker_bd574cf691230955745a8359990fb854 = L.marker(
+                [29.844, -95.6623],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_5be76e3640e3ed75b33db19a91269235 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bd574cf691230955745a8359990fb854.setIcon(icon_5be76e3640e3ed75b33db19a91269235);
+        
+    
+        var popup_de5c804fb3df8d95b1367feaf5eb89ef = L.popup({"maxWidth": 300});
+
+        
+            var html_7d65e6d80129aca6b60336ea8a78e121 = $(`<div id="html_7d65e6d80129aca6b60336ea8a78e121" style="width: 100.0%; height: 100.0%;">Average Housing Price: $265925<br><br> Annual Income: $30669<br><br> Projected ROI: 12%</div>`)[0];
+            popup_de5c804fb3df8d95b1367feaf5eb89ef.setContent(html_7d65e6d80129aca6b60336ea8a78e121);
+        
+
+        marker_bd574cf691230955745a8359990fb854.bindPopup(popup_de5c804fb3df8d95b1367feaf5eb89ef)
+        ;
+
+        
+    
+    
+            var marker_27dd89a20b88d472e2a5bc44f329b6bf = L.marker(
+                [33.9653, -118.1515],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_9ca7d9eb9795718c897f60f58a2a22d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_27dd89a20b88d472e2a5bc44f329b6bf.setIcon(icon_9ca7d9eb9795718c897f60f58a2a22d6);
+        
+    
+        var popup_8296da81b1d12a2290ee7a1e9abae55c = L.popup({"maxWidth": 300});
+
+        
+            var html_aa21e40bce9d3ecc49f8a6364f348aad = $(`<div id="html_aa21e40bce9d3ecc49f8a6364f348aad" style="width: 100.0%; height: 100.0%;">Average Housing Price: $798720<br><br> Annual Income: $33142<br><br> Projected ROI: 4%</div>`)[0];
+            popup_8296da81b1d12a2290ee7a1e9abae55c.setContent(html_aa21e40bce9d3ecc49f8a6364f348aad);
+        
+
+        marker_27dd89a20b88d472e2a5bc44f329b6bf.bindPopup(popup_8296da81b1d12a2290ee7a1e9abae55c)
+        ;
+
+        
+    
+    
+            var marker_b7bf69039955c44a5fc209243b31d5e2 = L.marker(
+                [40.8737, -73.8712],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_b513b51fa1369dd91d5aa9b119d942f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b7bf69039955c44a5fc209243b31d5e2.setIcon(icon_b513b51fa1369dd91d5aa9b119d942f7);
+        
+    
+        var popup_b50c148adcec1c87e35105d44a12d8eb = L.popup({"maxWidth": 300});
+
+        
+            var html_866a4e49f564b1b79e3148f146aeb852 = $(`<div id="html_866a4e49f564b1b79e3148f146aeb852" style="width: 100.0%; height: 100.0%;">Average Housing Price: $244260<br><br> Annual Income: $39474<br><br> Projected ROI: 16%</div>`)[0];
+            popup_b50c148adcec1c87e35105d44a12d8eb.setContent(html_866a4e49f564b1b79e3148f146aeb852);
+        
+
+        marker_b7bf69039955c44a5fc209243b31d5e2.bindPopup(popup_b50c148adcec1c87e35105d44a12d8eb)
+        ;
+
+        
+    
+    
+            var marker_d7fd6fd4d140453b1cc7d81803679528 = L.marker(
+                [40.6467, -73.957],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_a23b82d8364cb4ccb4962c9097a7667f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d7fd6fd4d140453b1cc7d81803679528.setIcon(icon_a23b82d8364cb4ccb4962c9097a7667f);
+        
+    
+        var popup_ad414f35fcda83864e73568f6c028eea = L.popup({"maxWidth": 300});
+
+        
+            var html_1fd80d0cf8ce80958c69684d100039ca = $(`<div id="html_1fd80d0cf8ce80958c69684d100039ca" style="width: 100.0%; height: 100.0%;">Average Housing Price: $729605<br><br> Annual Income: $52368<br><br> Projected ROI: 7%</div>`)[0];
+            popup_ad414f35fcda83864e73568f6c028eea.setContent(html_1fd80d0cf8ce80958c69684d100039ca);
+        
+
+        marker_d7fd6fd4d140453b1cc7d81803679528.bindPopup(popup_ad414f35fcda83864e73568f6c028eea)
+        ;
+
+        
+    
+    
+            var marker_334646d97d5a4af1b5371753dd2bdabc = L.marker(
+                [40.7095, -73.9563],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_d828c3e86fa395988d6d29361713e31f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_334646d97d5a4af1b5371753dd2bdabc.setIcon(icon_d828c3e86fa395988d6d29361713e31f);
+        
+    
+        var popup_5f7d1862e5fd5b3e66eeb467a1c96082 = L.popup({"maxWidth": 300});
+
+        
+            var html_636386919a80e7ff7b0982a6a370445e = $(`<div id="html_636386919a80e7ff7b0982a6a370445e" style="width: 100.0%; height: 100.0%;">Average Housing Price: $1664910<br><br> Annual Income: $32092<br><br> Projected ROI: 2%</div>`)[0];
+            popup_5f7d1862e5fd5b3e66eeb467a1c96082.setContent(html_636386919a80e7ff7b0982a6a370445e);
+        
+
+        marker_334646d97d5a4af1b5371753dd2bdabc.bindPopup(popup_5f7d1862e5fd5b3e66eeb467a1c96082)
+        ;
+
+        
+    
+    
+            var marker_0f9ea385f04ee5fb293cbe1bfe2d9fb8 = L.marker(
+                [40.6407, -73.9028],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_eb14c1eaaa5b65f48765d958b9228cc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0f9ea385f04ee5fb293cbe1bfe2d9fb8.setIcon(icon_eb14c1eaaa5b65f48765d958b9228cc7);
+        
+    
+        var popup_637b85663351250f2ff041eb92309571 = L.popup({"maxWidth": 300});
+
+        
+            var html_540c1b842c0ff816630e6a5c97061935 = $(`<div id="html_540c1b842c0ff816630e6a5c97061935" style="width: 100.0%; height: 100.0%;">Average Housing Price: $523875<br><br> Annual Income: $21589<br><br> Projected ROI: 4%</div>`)[0];
+            popup_637b85663351250f2ff041eb92309571.setContent(html_540c1b842c0ff816630e6a5c97061935);
+        
+
+        marker_0f9ea385f04ee5fb293cbe1bfe2d9fb8.bindPopup(popup_637b85663351250f2ff041eb92309571)
+        ;
+
+        
+    
+    
+            var marker_b2ff3aa03a1f3b92e7d53194fbce94c1 = L.marker(
+                [40.6412, -74.0133],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_b3a27e9507943b7a0c8ec7f7cf697b80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b2ff3aa03a1f3b92e7d53194fbce94c1.setIcon(icon_b3a27e9507943b7a0c8ec7f7cf697b80);
+        
+    
+        var popup_3b3a042194ec6daa571431389f11e754 = L.popup({"maxWidth": 300});
+
+        
+            var html_7ddaed8995bc59ae9f2f0b664a3c13ee = $(`<div id="html_7ddaed8995bc59ae9f2f0b664a3c13ee" style="width: 100.0%; height: 100.0%;">Average Housing Price: $625350<br><br> Annual Income: $38361<br><br> Projected ROI: 6%</div>`)[0];
+            popup_3b3a042194ec6daa571431389f11e754.setContent(html_7ddaed8995bc59ae9f2f0b664a3c13ee);
+        
+
+        marker_b2ff3aa03a1f3b92e7d53194fbce94c1.bindPopup(popup_3b3a042194ec6daa571431389f11e754)
+        ;
+
+        
+    
+    
+            var marker_aadbf11c536090fde15d332f3e664f2c = L.marker(
+                [34.0794, -117.4551],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_9e94910677a9def86aa4d3801edb1ce7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aadbf11c536090fde15d332f3e664f2c.setIcon(icon_9e94910677a9def86aa4d3801edb1ce7);
+        
+    
+        var popup_e31a358781b6017c29f35cbdf2095aaf = L.popup({"maxWidth": 300});
+
+        
+            var html_b5d42f480b4edd2d5033b46b324ca4fe = $(`<div id="html_b5d42f480b4edd2d5033b46b324ca4fe" style="width: 100.0%; height: 100.0%;">Average Housing Price: $366935<br><br> Annual Income: $45807<br><br> Projected ROI: 12%</div>`)[0];
+            popup_e31a358781b6017c29f35cbdf2095aaf.setContent(html_b5d42f480b4edd2d5033b46b324ca4fe);
+        
+
+        marker_aadbf11c536090fde15d332f3e664f2c.bindPopup(popup_e31a358781b6017c29f35cbdf2095aaf)
+        ;
+
+        
+    
+    
+            var marker_a3d3bba5f07cd5bed20d056ff82bfc55 = L.marker(
+                [40.6762, -73.8736],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_8d64839c4ea4875b71ec8ca006d1e86e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a3d3bba5f07cd5bed20d056ff82bfc55.setIcon(icon_8d64839c4ea4875b71ec8ca006d1e86e);
+        
+    
+        var popup_acd31ebd1b86e5c6fccf787c87480db2 = L.popup({"maxWidth": 300});
+
+        
+            var html_77bab866ed5e9ad7345e49f7646f8821 = $(`<div id="html_77bab866ed5e9ad7345e49f7646f8821" style="width: 100.0%; height: 100.0%;">Average Housing Price: $779050<br><br> Annual Income: $44904<br><br> Projected ROI: 6%</div>`)[0];
+            popup_acd31ebd1b86e5c6fccf787c87480db2.setContent(html_77bab866ed5e9ad7345e49f7646f8821);
+        
+
+        marker_a3d3bba5f07cd5bed20d056ff82bfc55.bindPopup(popup_acd31ebd1b86e5c6fccf787c87480db2)
+        ;
+
+        
+    
+    
+            var marker_8f779e815efb010b085b15c43aa97de1 = L.marker(
+                [40.6205, -73.9239],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_65b2bfbac571f59d8fb1cf4c682b26b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8f779e815efb010b085b15c43aa97de1.setIcon(icon_65b2bfbac571f59d8fb1cf4c682b26b8);
+        
+    
+        var popup_a408cf94e23470a905549892be07e20b = L.popup({"maxWidth": 300});
+
+        
+            var html_7cc6b34876942c0c48b6dc8aba7e47d2 = $(`<div id="html_7cc6b34876942c0c48b6dc8aba7e47d2" style="width: 100.0%; height: 100.0%;">Average Housing Price: $441435<br><br> Annual Income: $46181<br><br> Projected ROI: 10%</div>`)[0];
+            popup_a408cf94e23470a905549892be07e20b.setContent(html_7cc6b34876942c0c48b6dc8aba7e47d2);
+        
+
+        marker_8f779e815efb010b085b15c43aa97de1.bindPopup(popup_a408cf94e23470a905549892be07e20b)
+        ;
+
+        
+    
+    
+            var marker_337cf27c3e0180f9d3e8512f378fce20 = L.marker(
+                [33.9143, -118.3493],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_d4eac11b9ea3425aca3c06d316dde998 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_337cf27c3e0180f9d3e8512f378fce20.setIcon(icon_d4eac11b9ea3425aca3c06d316dde998);
+        
+    
+        var popup_c4ce36bb6ca150ebaf226ae9d8480166 = L.popup({"maxWidth": 300});
+
+        
+            var html_061887a0c45ad9d9e9bc43a17733c5bc = $(`<div id="html_061887a0c45ad9d9e9bc43a17733c5bc" style="width: 100.0%; height: 100.0%;">Average Housing Price: $736870<br><br> Annual Income: $60142<br><br> Projected ROI: 8%</div>`)[0];
+            popup_c4ce36bb6ca150ebaf226ae9d8480166.setContent(html_061887a0c45ad9d9e9bc43a17733c5bc);
+        
+
+        marker_337cf27c3e0180f9d3e8512f378fce20.bindPopup(popup_c4ce36bb6ca150ebaf226ae9d8480166)
+        ;
+
+        
+    
+    
+            var marker_363334242d594b12fa9b1eca578c08f3 = L.marker(
+                [40.7351, -73.8776],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_3460150db8e4af1c4bbd6b6c5611ec70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_363334242d594b12fa9b1eca578c08f3.setIcon(icon_3460150db8e4af1c4bbd6b6c5611ec70);
+        
+    
+        var popup_8624c9d0574cfd8f9ae3ab3dd5e2ffd3 = L.popup({"maxWidth": 300});
+
+        
+            var html_bd9ce371c269ea28686c506fdb9600d0 = $(`<div id="html_bd9ce371c269ea28686c506fdb9600d0" style="width: 100.0%; height: 100.0%;">Average Housing Price: $570705<br><br> Annual Income: $41144<br><br> Projected ROI: 7%</div>`)[0];
+            popup_8624c9d0574cfd8f9ae3ab3dd5e2ffd3.setContent(html_bd9ce371c269ea28686c506fdb9600d0);
+        
+
+        marker_363334242d594b12fa9b1eca578c08f3.bindPopup(popup_8624c9d0574cfd8f9ae3ab3dd5e2ffd3)
+        ;
+
+        
+    
+    
+            var marker_859a80660f2aceda75cf9bf2a9c3cf66 = L.marker(
+                [34.3054, -118.4322],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_f208f74aea09c3cf90b4b4ab4a6ecc7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_859a80660f2aceda75cf9bf2a9c3cf66.setIcon(icon_f208f74aea09c3cf90b4b4ab4a6ecc7b);
+        
+    
+        var popup_4190a6753f4976b659cddce4647fc15e = L.popup({"maxWidth": 300});
+
+        
+            var html_3acceabff5e947e8f9e4a4600c61dd07 = $(`<div id="html_3acceabff5e947e8f9e4a4600c61dd07" style="width: 100.0%; height: 100.0%;">Average Housing Price: $500455<br><br> Annual Income: $73237<br><br> Projected ROI: 15%</div>`)[0];
+            popup_4190a6753f4976b659cddce4647fc15e.setContent(html_3acceabff5e947e8f9e4a4600c61dd07);
+        
+
+        marker_859a80660f2aceda75cf9bf2a9c3cf66.bindPopup(popup_4190a6753f4976b659cddce4647fc15e)
+        ;
+
+        
+    
+    
+            var marker_e62c64590a269e8df30ebd3b195d6fb9 = L.marker(
+                [33.8635, -118.1801],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_90fb22e1a3a1cd7b2428c77017a52c21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e62c64590a269e8df30ebd3b195d6fb9.setIcon(icon_90fb22e1a3a1cd7b2428c77017a52c21);
+        
+    
+        var popup_407b36f803a0db0f685d5475d65232b8 = L.popup({"maxWidth": 300});
+
+        
+            var html_fa91b09b79c6ba92e41c94323c8f9f8e = $(`<div id="html_fa91b09b79c6ba92e41c94323c8f9f8e" style="width: 100.0%; height: 100.0%;">Average Housing Price: $577345<br><br> Annual Income: $33114<br><br> Projected ROI: 6%</div>`)[0];
+            popup_407b36f803a0db0f685d5475d65232b8.setContent(html_fa91b09b79c6ba92e41c94323c8f9f8e);
+        
+
+        marker_e62c64590a269e8df30ebd3b195d6fb9.bindPopup(popup_407b36f803a0db0f685d5475d65232b8)
+        ;
+
+        
+    
+    
+            var marker_de909d08d3ee453c250e7d25f1495a2e = L.marker(
+                [33.1499, -96.8241],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_f1c0ec636ba968ffbf955bef551355cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_de909d08d3ee453c250e7d25f1495a2e.setIcon(icon_f1c0ec636ba968ffbf955bef551355cd);
+        
+    
+        var popup_2e3f4eccc9c404ae23f9804d649431a2 = L.popup({"maxWidth": 300});
+
+        
+            var html_2a6926a82d9670ed4bdb561d65bd230d = $(`<div id="html_2a6926a82d9670ed4bdb561d65bd230d" style="width: 100.0%; height: 100.0%;">Average Housing Price: $686390<br><br> Annual Income: $37430<br><br> Projected ROI: 5%</div>`)[0];
+            popup_2e3f4eccc9c404ae23f9804d649431a2.setContent(html_2a6926a82d9670ed4bdb561d65bd230d);
+        
+
+        marker_de909d08d3ee453c250e7d25f1495a2e.bindPopup(popup_2e3f4eccc9c404ae23f9804d649431a2)
+        ;
+
+        
+    
+    
+            var marker_b7d807dfccfd4b9e465463d2a663b33b = L.marker(
+                [36.0595, -86.6592],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_b706ee44d02cfec7f764fad6411667d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b7d807dfccfd4b9e465463d2a663b33b.setIcon(icon_b706ee44d02cfec7f764fad6411667d1);
+        
+    
+        var popup_b14e26fa272e4eed8ab68eb1517e0c76 = L.popup({"maxWidth": 300});
+
+        
+            var html_fb2f72879845c49cb3bc0c0e5259a7a4 = $(`<div id="html_fb2f72879845c49cb3bc0c0e5259a7a4" style="width: 100.0%; height: 100.0%;">Average Housing Price: $329495<br><br> Annual Income: $39648<br><br> Projected ROI: 12%</div>`)[0];
+            popup_b14e26fa272e4eed8ab68eb1517e0c76.setContent(html_fb2f72879845c49cb3bc0c0e5259a7a4);
+        
+
+        marker_b7d807dfccfd4b9e465463d2a663b33b.bindPopup(popup_b14e26fa272e4eed8ab68eb1517e0c76)
+        ;
+
+        
+    
+    
+            var marker_79173a3778fe218a9fdb84d91bcd1970 = L.marker(
+                [33.9462, -118.2013],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_b63ff30b7924e70f736100a63e61754f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_79173a3778fe218a9fdb84d91bcd1970.setIcon(icon_b63ff30b7924e70f736100a63e61754f);
+        
+    
+        var popup_fbdd8f6956b2db15ef9b70f1b603f31c = L.popup({"maxWidth": 300});
+
+        
+            var html_db3b0c194b433a03cb04d560263eb788 = $(`<div id="html_db3b0c194b433a03cb04d560263eb788" style="width: 100.0%; height: 100.0%;">Average Housing Price: $565965<br><br> Annual Income: $33114<br><br> Projected ROI: 6%</div>`)[0];
+            popup_fbdd8f6956b2db15ef9b70f1b603f31c.setContent(html_db3b0c194b433a03cb04d560263eb788);
+        
+
+        marker_79173a3778fe218a9fdb84d91bcd1970.bindPopup(popup_fbdd8f6956b2db15ef9b70f1b603f31c)
+        ;
+
+        
+    
+    
+            var marker_122a220e2d1061de25e4621cdd5263bd = L.marker(
+                [41.9464, -87.7042],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_63d9085bef5b1a6c0c57a4e7d1b84459 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_122a220e2d1061de25e4621cdd5263bd.setIcon(icon_63d9085bef5b1a6c0c57a4e7d1b84459);
+        
+    
+        var popup_59a614bc6c2b822f854e49be8599e108 = L.popup({"maxWidth": 300});
+
+        
+            var html_ffd6d8bc08c29942492f18dfa69a8483 = $(`<div id="html_ffd6d8bc08c29942492f18dfa69a8483" style="width: 100.0%; height: 100.0%;">Average Housing Price: $355915<br><br> Annual Income: $40022<br><br> Projected ROI: 11%</div>`)[0];
+            popup_59a614bc6c2b822f854e49be8599e108.setContent(html_ffd6d8bc08c29942492f18dfa69a8483);
+        
+
+        marker_122a220e2d1061de25e4621cdd5263bd.bindPopup(popup_59a614bc6c2b822f854e49be8599e108)
+        ;
+
+        
+    
+    
+            var marker_476385ae32199d8a20fb75a8a3c944d9 = L.marker(
+                [33.9551, -118.2901],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_0ba2cd1623f56327d7fa24703bfe1e20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_476385ae32199d8a20fb75a8a3c944d9.setIcon(icon_0ba2cd1623f56327d7fa24703bfe1e20);
+        
+    
+        var popup_6b073d6a8b5b3f7af223063786acd480 = L.popup({"maxWidth": 300});
+
+        
+            var html_bd2f058c220ae66e3d03828e8afa1158 = $(`<div id="html_bd2f058c220ae66e3d03828e8afa1158" style="width: 100.0%; height: 100.0%;">Average Housing Price: $601860<br><br> Annual Income: $35103<br><br> Projected ROI: 6%</div>`)[0];
+            popup_6b073d6a8b5b3f7af223063786acd480.setContent(html_bd2f058c220ae66e3d03828e8afa1158);
+        
+
+        marker_476385ae32199d8a20fb75a8a3c944d9.bindPopup(popup_6b073d6a8b5b3f7af223063786acd480)
+        ;
+
+        
+    
+    
+            var marker_bb7034433ec38c59c5b49c02a2bcb23f = L.marker(
+                [40.8316, -73.9099],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_7d4eb83b84f8a008f3d21a0b94fcde9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bb7034433ec38c59c5b49c02a2bcb23f.setIcon(icon_7d4eb83b84f8a008f3d21a0b94fcde9d);
+        
+    
+        var popup_686601e6c81efcc318d3f289c68d60c3 = L.popup({"maxWidth": 300});
+
+        
+            var html_f6ad1ac0bddc58716f42e8e8faa20803 = $(`<div id="html_f6ad1ac0bddc58716f42e8e8faa20803" style="width: 100.0%; height: 100.0%;">Average Housing Price: $686235<br><br> Annual Income: $31344<br><br> Projected ROI: 5%</div>`)[0];
+            popup_686601e6c81efcc318d3f289c68d60c3.setContent(html_f6ad1ac0bddc58716f42e8e8faa20803);
+        
+
+        marker_bb7034433ec38c59c5b49c02a2bcb23f.bindPopup(popup_686601e6c81efcc318d3f289c68d60c3)
+        ;
+
+        
+    
+    
+            var marker_1a040e065644f209ba47c3c19d2adca9 = L.marker(
+                [33.9208, -117.4589],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_8f4feb434317874773b2073c925c621d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1a040e065644f209ba47c3c19d2adca9.setIcon(icon_8f4feb434317874773b2073c925c621d);
+        
+    
+        var popup_b60e2b20e51990ce0dbdf2782c0b53c7 = L.popup({"maxWidth": 300});
+
+        
+            var html_6eeff3334658f68a446e659bad66c428 = $(`<div id="html_6eeff3334658f68a446e659bad66c428" style="width: 100.0%; height: 100.0%;">Average Housing Price: $298020<br><br> Annual Income: $35697<br><br> Projected ROI: 12%</div>`)[0];
+            popup_b60e2b20e51990ce0dbdf2782c0b53c7.setContent(html_6eeff3334658f68a446e659bad66c428);
+        
+
+        marker_1a040e065644f209ba47c3c19d2adca9.bindPopup(popup_b60e2b20e51990ce0dbdf2782c0b53c7)
+        ;
+
+        
+    
+    
+            var marker_53060ad1ab4227ecee2d1881b5d13ed6 = L.marker(
+                [40.7975, -73.9683],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_7b985a1fe4f21e79f75d2f23bf714be7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_53060ad1ab4227ecee2d1881b5d13ed6.setIcon(icon_7b985a1fe4f21e79f75d2f23bf714be7);
+        
+    
+        var popup_dcb57bcb8b82a2c05131e75b2b60be84 = L.popup({"maxWidth": 300});
+
+        
+            var html_53e9a976493e3aff6e7cb95b855aa97d = $(`<div id="html_53e9a976493e3aff6e7cb95b855aa97d" style="width: 100.0%; height: 100.0%;">Average Housing Price: $1255825<br><br> Annual Income: $22338<br><br> Projected ROI: 2%</div>`)[0];
+            popup_dcb57bcb8b82a2c05131e75b2b60be84.setContent(html_53e9a976493e3aff6e7cb95b855aa97d);
+        
+
+        marker_53060ad1ab4227ecee2d1881b5d13ed6.bindPopup(popup_dcb57bcb8b82a2c05131e75b2b60be84)
+        ;
+
+        
+    
+    
+            var marker_d9cc435e53080c5fff787156f96c76e5 = L.marker(
+                [34.1173, -117.4378],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_bfcf3af8f31e33499e14bdba6d1b31af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d9cc435e53080c5fff787156f96c76e5.setIcon(icon_bfcf3af8f31e33499e14bdba6d1b31af);
+        
+    
+        var popup_bf05dc5c0e2c3648d38869f4c232b008 = L.popup({"maxWidth": 300});
+
+        
+            var html_4474f9f5be4cdb22ff08dc20febc9b9f = $(`<div id="html_4474f9f5be4cdb22ff08dc20febc9b9f" style="width: 100.0%; height: 100.0%;">Average Housing Price: $556450<br><br> Annual Income: $55452<br><br> Projected ROI: 10%</div>`)[0];
+            popup_bf05dc5c0e2c3648d38869f4c232b008.setContent(html_4474f9f5be4cdb22ff08dc20febc9b9f);
+        
+
+        marker_d9cc435e53080c5fff787156f96c76e5.bindPopup(popup_bf05dc5c0e2c3648d38869f4c232b008)
+        ;
+
+        
+    
+    
+            var marker_6084faa00f3c5cceafb3585e1d18b0d8 = L.marker(
+                [40.6016, -73.9968],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_985d6a58f9dd68d50cd3d66ddb8b823f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6084faa00f3c5cceafb3585e1d18b0d8.setIcon(icon_985d6a58f9dd68d50cd3d66ddb8b823f);
+        
+    
+        var popup_0e3ab32f9e0f178487f06d06e3c37db1 = L.popup({"maxWidth": 300});
+
+        
+            var html_8402454d87047cbfb67a614d55ddfb07 = $(`<div id="html_8402454d87047cbfb67a614d55ddfb07" style="width: 100.0%; height: 100.0%;">Average Housing Price: $665295<br><br> Annual Income: $24628<br><br> Projected ROI: 4%</div>`)[0];
+            popup_0e3ab32f9e0f178487f06d06e3c37db1.setContent(html_8402454d87047cbfb67a614d55ddfb07);
+        
+
+        marker_6084faa00f3c5cceafb3585e1d18b0d8.bindPopup(popup_0e3ab32f9e0f178487f06d06e3c37db1)
+        ;
+
+        
+    
+    
+            var marker_66a3b2c8835761c14628184e4c4e6c92 = L.marker(
+                [32.6605, -97.0311],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_513062df34c6ac18aec3a2659770c9bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_66a3b2c8835761c14628184e4c4e6c92.setIcon(icon_513062df34c6ac18aec3a2659770c9bf);
+        
+    
+        var popup_030cdd95273271ddb754fae6f7e39262 = L.popup({"maxWidth": 300});
+
+        
+            var html_22caa4546ff36ecea6756585c257d1de = $(`<div id="html_22caa4546ff36ecea6756585c257d1de" style="width: 100.0%; height: 100.0%;">Average Housing Price: $320205<br><br> Annual Income: $46099<br><br> Projected ROI: 14%</div>`)[0];
+            popup_030cdd95273271ddb754fae6f7e39262.setContent(html_22caa4546ff36ecea6756585c257d1de);
+        
+
+        marker_66a3b2c8835761c14628184e4c4e6c92.bindPopup(popup_030cdd95273271ddb754fae6f7e39262)
+        ;
+
+        
+    
+    
+            var marker_41bb40dd75db542372038b3a3634c832 = L.marker(
+                [40.6336, -73.996],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_6ea13ff585a18dc1d36922d473ee110e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_41bb40dd75db542372038b3a3634c832.setIcon(icon_6ea13ff585a18dc1d36922d473ee110e);
+        
+    
+        var popup_e48129a84cca0afff1302fb2dc129e89 = L.popup({"maxWidth": 300});
+
+        
+            var html_ae8a66da42ea7d65997b789f4b62e594 = $(`<div id="html_ae8a66da42ea7d65997b789f4b62e594" style="width: 100.0%; height: 100.0%;">Average Housing Price: $792095<br><br> Annual Income: $30942<br><br> Projected ROI: 4%</div>`)[0];
+            popup_e48129a84cca0afff1302fb2dc129e89.setContent(html_ae8a66da42ea7d65997b789f4b62e594);
+        
+
+        marker_41bb40dd75db542372038b3a3634c832.bindPopup(popup_e48129a84cca0afff1302fb2dc129e89)
+        ;
+
+        
+    
+    
+            var marker_b8f06eae233e3d967f48f36a47772399 = L.marker(
+                [38.0031, -121.9172],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_eec825a9fb6fbc5ba21b131345bd1342 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b8f06eae233e3d967f48f36a47772399.setIcon(icon_eec825a9fb6fbc5ba21b131345bd1342);
+        
+    
+        var popup_e6cf6b32b985ded141bbee53b41a4865 = L.popup({"maxWidth": 300});
+
+        
+            var html_629958dfa9f5e4b289533fd35df27323 = $(`<div id="html_629958dfa9f5e4b289533fd35df27323" style="width: 100.0%; height: 100.0%;">Average Housing Price: $319920<br><br> Annual Income: $45333<br><br> Projected ROI: 14%</div>`)[0];
+            popup_e6cf6b32b985ded141bbee53b41a4865.setContent(html_629958dfa9f5e4b289533fd35df27323);
+        
+
+        marker_b8f06eae233e3d967f48f36a47772399.bindPopup(popup_e6cf6b32b985ded141bbee53b41a4865)
+        ;
+
+        
+    
+    
+            var marker_5f8f5ef13597e600987e9028fcfa401c = L.marker(
+                [33.1976, -96.6153],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_61a8212ea2f1ccc3059c9e699842030b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5f8f5ef13597e600987e9028fcfa401c.setIcon(icon_61a8212ea2f1ccc3059c9e699842030b);
+        
+    
+        var popup_6c60ee039af6a5864d51f99b3a91d14d = L.popup({"maxWidth": 300});
+
+        
+            var html_065ffccfc7088ec4906b8864a94f17f2 = $(`<div id="html_065ffccfc7088ec4906b8864a94f17f2" style="width: 100.0%; height: 100.0%;">Average Housing Price: $406605<br><br> Annual Income: $43088<br><br> Projected ROI: 11%</div>`)[0];
+            popup_6c60ee039af6a5864d51f99b3a91d14d.setContent(html_065ffccfc7088ec4906b8864a94f17f2);
+        
+
+        marker_5f8f5ef13597e600987e9028fcfa401c.bindPopup(popup_6c60ee039af6a5864d51f99b3a91d14d)
+        ;
+
+        
+    
+    
+            var marker_4ce821c877ae98cec9f69d4f30ecb84d = L.marker(
+                [25.9221, -97.4612],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_ea586f3a5dff5ef31987dc984e22b977 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4ce821c877ae98cec9f69d4f30ecb84d.setIcon(icon_ea586f3a5dff5ef31987dc984e22b977);
+        
+    
+        var popup_820072dc9c1b5712caa3fecc630fe135 = L.popup({"maxWidth": 300});
+
+        
+            var html_cc698e7b42511c4da423c7239835da77 = $(`<div id="html_cc698e7b42511c4da423c7239835da77" style="width: 100.0%; height: 100.0%;">Average Housing Price: $348905<br><br> Annual Income: $29875<br><br> Projected ROI: 9%</div>`)[0];
+            popup_820072dc9c1b5712caa3fecc630fe135.setContent(html_cc698e7b42511c4da423c7239835da77);
+        
+
+        marker_4ce821c877ae98cec9f69d4f30ecb84d.bindPopup(popup_820072dc9c1b5712caa3fecc630fe135)
+        ;
+
+        
+    
+    
+            var marker_3b571fbcff69d349614d2c23684e36b4 = L.marker(
+                [40.6705, -73.894],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_a3f7532ee223152722e26032c6802216 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3b571fbcff69d349614d2c23684e36b4.setIcon(icon_a3f7532ee223152722e26032c6802216);
+        
+    
+        var popup_98cb0f25fc8ee7f1bea8dbb4b8bb61b2 = L.popup({"maxWidth": 300});
+
+        
+            var html_fd447a30b575a90ebdd0c6ad3fe8d810 = $(`<div id="html_fd447a30b575a90ebdd0c6ad3fe8d810" style="width: 100.0%; height: 100.0%;">Average Housing Price: $514240<br><br> Annual Income: $39611<br><br> Projected ROI: 8%</div>`)[0];
+            popup_98cb0f25fc8ee7f1bea8dbb4b8bb61b2.setContent(html_fd447a30b575a90ebdd0c6ad3fe8d810);
+        
+
+        marker_3b571fbcff69d349614d2c23684e36b4.bindPopup(popup_98cb0f25fc8ee7f1bea8dbb4b8bb61b2)
+        ;
+
+        
+    
+    
+            var marker_00ec9a7aa71db0591a9c11c6a1db31e2 = L.marker(
+                [33.7524, -117.9939],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_d391856f894643196572924ab6937dd0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_00ec9a7aa71db0591a9c11c6a1db31e2.setIcon(icon_d391856f894643196572924ab6937dd0);
+        
+    
+        var popup_3cc35b7a8133118a14d5217a5280671d = L.popup({"maxWidth": 300});
+
+        
+            var html_ef0022b9a2e0233cb8225a32b2710d59 = $(`<div id="html_ef0022b9a2e0233cb8225a32b2710d59" style="width: 100.0%; height: 100.0%;">Average Housing Price: $591390<br><br> Annual Income: $46546<br><br> Projected ROI: 8%</div>`)[0];
+            popup_3cc35b7a8133118a14d5217a5280671d.setContent(html_ef0022b9a2e0233cb8225a32b2710d59);
+        
+
+        marker_00ec9a7aa71db0591a9c11c6a1db31e2.bindPopup(popup_3cc35b7a8133118a14d5217a5280671d)
+        ;
+
+        
+    
+    
+            var marker_75560d8bee9edac4556d8d44656027db = L.marker(
+                [41.8093, -87.7052],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_822e6fab0a395d25ddbf3177c48666f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_75560d8bee9edac4556d8d44656027db.setIcon(icon_822e6fab0a395d25ddbf3177c48666f4);
+        
+    
+        var popup_cae3a23cf63bc73012e5551c84f4a341 = L.popup({"maxWidth": 300});
+
+        
+            var html_e0ba9b53c0286a6cb130f9fdb87786e0 = $(`<div id="html_e0ba9b53c0286a6cb130f9fdb87786e0" style="width: 100.0%; height: 100.0%;">Average Housing Price: $164980<br><br> Annual Income: $28397<br><br> Projected ROI: 17%</div>`)[0];
+            popup_cae3a23cf63bc73012e5551c84f4a341.setContent(html_e0ba9b53c0286a6cb130f9fdb87786e0);
+        
+
+        marker_75560d8bee9edac4556d8d44656027db.bindPopup(popup_cae3a23cf63bc73012e5551c84f4a341)
+        ;
+
+        
+    
+    
+            var marker_a5c713147439fc606f5e3f28c896b58b = L.marker(
+                [41.9202, -87.7535],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_78d1848faec55800cd2716dc7b24766b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a5c713147439fc606f5e3f28c896b58b.setIcon(icon_78d1848faec55800cd2716dc7b24766b);
+        
+    
+        var popup_e9f20804f588195cc109134f696c1587 = L.popup({"maxWidth": 300});
+
+        
+            var html_49580f23e6d18aeebbedd6fc3b67c609 = $(`<div id="html_49580f23e6d18aeebbedd6fc3b67c609" style="width: 100.0%; height: 100.0%;">Average Housing Price: $371810<br><br> Annual Income: $52185<br><br> Projected ROI: 14%</div>`)[0];
+            popup_e9f20804f588195cc109134f696c1587.setContent(html_49580f23e6d18aeebbedd6fc3b67c609);
+        
+
+        marker_a5c713147439fc606f5e3f28c896b58b.bindPopup(popup_e9f20804f588195cc109134f696c1587)
+        ;
+
+        
+    
+    
+            var marker_9a719afc7a1eae6e07de4022d2b95f7c = L.marker(
+                [33.7249, -117.909],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_0a378d04019f35ec294ae68a7011aa7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9a719afc7a1eae6e07de4022d2b95f7c.setIcon(icon_0a378d04019f35ec294ae68a7011aa7f);
+        
+    
+        var popup_d0199b75655ba6e6a0ddc6d9a7ab0361 = L.popup({"maxWidth": 300});
+
+        
+            var html_54af793b821f827b3f08324593dee187 = $(`<div id="html_54af793b821f827b3f08324593dee187" style="width: 100.0%; height: 100.0%;">Average Housing Price: $373900<br><br> Annual Income: $43553<br><br> Projected ROI: 12%</div>`)[0];
+            popup_d0199b75655ba6e6a0ddc6d9a7ab0361.setContent(html_54af793b821f827b3f08324593dee187);
+        
+
+        marker_9a719afc7a1eae6e07de4022d2b95f7c.bindPopup(popup_d0199b75655ba6e6a0ddc6d9a7ab0361)
+        ;
+
+        
+    
+    
+            var marker_52eb371b20823d015e8fbc0b59ccc293 = L.marker(
+                [40.6225, -73.965],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_ef33d6e1aefac005287a6c7c921fae4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_52eb371b20823d015e8fbc0b59ccc293.setIcon(icon_ef33d6e1aefac005287a6c7c921fae4f);
+        
+    
+        var popup_6bd78d5426c0913d9c799407c675688e = L.popup({"maxWidth": 300});
+
+        
+            var html_c76e8abcb3e3de658e9ca100c213aacf = $(`<div id="html_c76e8abcb3e3de658e9ca100c213aacf" style="width: 100.0%; height: 100.0%;">Average Housing Price: $625995<br><br> Annual Income: $41610<br><br> Projected ROI: 7%</div>`)[0];
+            popup_6bd78d5426c0913d9c799407c675688e.setContent(html_c76e8abcb3e3de658e9ca100c213aacf);
+        
+
+        marker_52eb371b20823d015e8fbc0b59ccc293.bindPopup(popup_6bd78d5426c0913d9c799407c675688e)
+        ;
+
+        
+    
+    
+            var marker_4e57de7418e215559818e614b63db885 = L.marker(
+                [40.6039, -74.1472],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_55606204441eedf2c3da47a1c2757a2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4e57de7418e215559818e614b63db885.setIcon(icon_55606204441eedf2c3da47a1c2757a2b);
+        
+    
+        var popup_be26584225103c63206c1fb744aa6387 = L.popup({"maxWidth": 300});
+
+        
+            var html_0a8f3b21cb67f5f6ecf95a3675680388 = $(`<div id="html_0a8f3b21cb67f5f6ecf95a3675680388" style="width: 100.0%; height: 100.0%;">Average Housing Price: $496955<br><br> Annual Income: $23496<br><br> Projected ROI: 5%</div>`)[0];
+            popup_be26584225103c63206c1fb744aa6387.setContent(html_0a8f3b21cb67f5f6ecf95a3675680388);
+        
+
+        marker_4e57de7418e215559818e614b63db885.bindPopup(popup_be26584225103c63206c1fb744aa6387)
+        ;
+
+        
+    
+    
+            var marker_b1c4445e7ca36b8a37ca82bd254074a3 = L.marker(
+                [40.745, -73.9069],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_940936674878cf38f5cd6d128411aaf5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b1c4445e7ca36b8a37ca82bd254074a3.setIcon(icon_940936674878cf38f5cd6d128411aaf5);
+        
+    
+        var popup_d997846295a64835df5e3e665d01e209 = L.popup({"maxWidth": 300});
+
+        
+            var html_70e8175bb63d2d981650de3ccf4b37ec = $(`<div id="html_70e8175bb63d2d981650de3ccf4b37ec" style="width: 100.0%; height: 100.0%;">Average Housing Price: $623195<br><br> Annual Income: $39666<br><br> Projected ROI: 6%</div>`)[0];
+            popup_d997846295a64835df5e3e665d01e209.setContent(html_70e8175bb63d2d981650de3ccf4b37ec);
+        
+
+        marker_b1c4445e7ca36b8a37ca82bd254074a3.bindPopup(popup_d997846295a64835df5e3e665d01e209)
+        ;
+
+        
+    
+    
+            var marker_8ea77e31b4a3e1bea28ea64241b91422 = L.marker(
+                [33.9418, -84.0706],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_a7d959d5667392534307fbc228ba1bfb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8ea77e31b4a3e1bea28ea64241b91422.setIcon(icon_a7d959d5667392534307fbc228ba1bfb);
+        
+    
+        var popup_6f82aace60cbd7d00f9378ef0c61f0d1 = L.popup({"maxWidth": 300});
+
+        
+            var html_c6128abb1c16544391c1cad855b90122 = $(`<div id="html_c6128abb1c16544391c1cad855b90122" style="width: 100.0%; height: 100.0%;">Average Housing Price: $251705<br><br> Annual Income: $43006<br><br> Projected ROI: 17%</div>`)[0];
+            popup_6f82aace60cbd7d00f9378ef0c61f0d1.setContent(html_c6128abb1c16544391c1cad855b90122);
+        
+
+        marker_8ea77e31b4a3e1bea28ea64241b91422.bindPopup(popup_6f82aace60cbd7d00f9378ef0c61f0d1)
+        ;
+
+        
+    
+    
+            var marker_ad3628f4f087e8303a5f1300e5bb0e32 = L.marker(
+                [34.0125, -117.6844],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_c1bad2ef6862140d31258c2fdbb6e2af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ad3628f4f087e8303a5f1300e5bb0e32.setIcon(icon_c1bad2ef6862140d31258c2fdbb6e2af);
+        
+    
+        var popup_a210a279e6dcf077635504d9fa90beea = L.popup({"maxWidth": 300});
+
+        
+            var html_5d9eb5bff604f06547f0fe9c931a5a10 = $(`<div id="html_5d9eb5bff604f06547f0fe9c931a5a10" style="width: 100.0%; height: 100.0%;">Average Housing Price: $444515<br><br> Annual Income: $18250<br><br> Projected ROI: 4%</div>`)[0];
+            popup_a210a279e6dcf077635504d9fa90beea.setContent(html_5d9eb5bff604f06547f0fe9c931a5a10);
+        
+
+        marker_ad3628f4f087e8303a5f1300e5bb0e32.bindPopup(popup_a210a279e6dcf077635504d9fa90beea)
+        ;
+
+        
+    
+    
+            var marker_c6757673b0544de33455bdb62e64b217 = L.marker(
+                [29.5785, -95.6066],
+                {}
+            ).addTo(map_7e76d7403567940f195457357bd95d4d);
+        
+    
+            var icon_9b706f4412d4ba6bd1e25682e75f14c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c6757673b0544de33455bdb62e64b217.setIcon(icon_9b706f4412d4ba6bd1e25682e75f14c5);
+        
+    
+        var popup_2692701b46552a1612208a0aa97f1a0f = L.popup({"maxWidth": 300});
+
+        
+            var html_4a94a4c0cc9d98e4bc874bdf4e0e7ad9 = $(`<div id="html_4a94a4c0cc9d98e4bc874bdf4e0e7ad9" style="width: 100.0%; height: 100.0%;">Average Housing Price: $298600<br><br> Annual Income: $31015<br><br> Projected ROI: 10%</div>`)[0];
+            popup_2692701b46552a1612208a0aa97f1a0f.setContent(html_4a94a4c0cc9d98e4bc874bdf4e0e7ad9);
+        
+
+        marker_c6757673b0544de33455bdb62e64b217.bindPopup(popup_2692701b46552a1612208a0aa97f1a0f)
+        ;
+
+        
+    
+</script>
